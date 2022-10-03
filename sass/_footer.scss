@@ -1,0 +1,100 @@
+@import 'variables';
+.section-footer {
+    background-color: $color-footer;
+    color: $white;
+    padding: 1rem 1rem 2rem 1rem;
+    &-heading {
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        font-family: Arial;
+        margin: 0.7rem 0 0.3rem;
+    }
+    &-heading:hover{ 
+        color: $color-main;
+    }
+    &-outside {
+        margin-top: 3rem;
+        &__item {
+            padding: 1rem;
+            background-color: #eeeeee;
+            width: 100%;
+            border-radius: 0.5rem;
+            box-shadow: 0.1rem 0.1rem 0.5rem #d8d8d81f;
+            height: auto;
+            margin-right: 3rem;
+            margin-top: 1rem;
+            color: $black;
+            &--title {
+                border: 0.2rem solid #777;
+                border-radius: 0.3rem;
+                padding: 1rem;
+                font-weight: 800;
+                font-size: 1.3rem;
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                p {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    line-height: 1em;
+                }
+                i {
+                    margin-right: 0.5rem;
+                }
+            }
+            &--title:hover { 
+                i {
+                    color: $black;
+                }
+                p {
+                    color: $color-main;
+                }
+            }
+            &--text {
+                font-size: 1.3rem;
+                line-height: 1.3rem;
+                padding: 1.3rem 1.3rem 1.3rem 0;
+            }
+            &--text:last-child {
+                margin-bottom: 1.5rem;
+            }
+            &--text:hover { 
+                color: $color-main;
+            }
+        }
+        &__inside {
+            &--item {
+                &-heading{
+                    font-size: 1.6rem;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    padding-bottom: 0.5rem;
+                    margin-top: 1rem;
+                }
+                &-link {
+                    padding: 1rem 0 1rem 0;
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    color: $white;
+                    svg {
+                        margin-right: 0.5rem;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+                &-heading:hover{ 
+                    color: $color-main;
+                }
+                &-link:hover {
+                    svg {
+                        color: $white;
+                    }
+                    p {
+                        color: $color-main;
+                    }
+                }
+            }
+        }
+    }
+}

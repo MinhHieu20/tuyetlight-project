@@ -101,7 +101,7 @@ video {
 
 html {
   font-size: 62.5%;
-  font-family: UTM-Avo;
+  font-family: Roboto-Regular ,'san-serif';
   line-height: 2em;
   box-sizing: border-box;
 }
@@ -151,4 +151,11 @@ img {
 .slick-next,
 .slick-prev{
   display: none;
+}
+.col-xl-2-5,
+.col-lg-2-5,
+.col-md-2-5,
+.col-2-5 {
+  flex: 0 0 auto;
+  width: 20%;
 }
